@@ -1,1 +1,109 @@
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form UMKM Martabak</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .fade-in {
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-blue-100 to-green-100 min-h-screen flex items-center justify-center p-4">
+
+  <div class="bg-white w-full max-w-3xl p-6 rounded-2xl shadow-xl fade-in">
+
+    <h1 class="text-2xl font-bold text-center text-blue-600 mb-6">
+      Form UMKM Martabak Manis
+    </h1>
+
+    <form class="space-y-4">
+
+      <!-- Identitas -->
+      <div>
+        <label class="font-semibold">Nama UMKM</label>
+        <input type="text" value="Martabak Manis" class="w-full border p-2 rounded-lg focus:ring-2 focus:ring-blue-400">
+      </div>
+
+      <div>
+        <label class="font-semibold">Nama Pemilik</label>
+        <input type="text" value="Izhar Syah" class="w-full border p-2 rounded-lg focus:ring-2 focus:ring-blue-400">
+      </div>
+
+      <div>
+        <label class="font-semibold">Alamat Lengkap</label>
+        <textarea class="w-full border p-2 rounded-lg focus:ring-2 focus:ring-blue-400">Jln. Kotabambu</textarea>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-4">
+        <div>
+          <label class="font-semibold">No. HP / WhatsApp</label>
+          <input type="text" value="085691950760" class="w-full border p-2 rounded-lg focus:ring-2 focus:ring-green-400">
+        </div>
+
+        <div>
+          <label class="font-semibold">Email (Opsional)</label>
+          <input type="email" value="martabakmanisofficial@gmail.com" class="w-full border p-2 rounded-lg focus:ring-2 focus:ring-green-400">
+        </div>
+      </div>
+
+      <!-- Usaha -->
+      <div>
+        <label class="font-semibold">Deskripsi Usaha</label>
+        <textarea class="w-full border p-2 rounded-lg focus:ring-2 focus:ring-blue-400">
+Menjual martabak manis dengan berbagai rasa seperti coklat, keju, dan lainnya dengan cita rasa lezat.
+        </textarea>
+      </div>
+
+      <div>
+        <label class="font-semibold">Kategori Usaha</label>
+        <input type="text" value="Kuliner" class="w-full border p-2 rounded-lg focus:ring-2 focus:ring-blue-400">
+      </div>
+
+      <div>
+        <label class="font-semibold">Jam Operasional</label>
+        <input type="text" value="08.00 - 13.00" class="w-full border p-2 rounded-lg focus:ring-2 focus:ring-blue-400">
+      </div>
+
+      <!-- Produk -->
+      <h2 class="text-xl font-semibold text-green-600 mt-6">Daftar Produk</h2>
+
+      <div class="space-y-4">
+
+        <!-- Produk 1 -->
+        <div class="bg-gray-50 p-4 rounded-xl hover:shadow-md transition">
+          <input type="text" value="Martabak Manis" class="w-full border p-2 rounded mb-2">
+          <input type="text" value="Rp 20.000 - 30.000" class="w-full border p-2 rounded mb-2">
+          <textarea class="w-full border p-2 rounded">Rasanya sangat nikmat dengan berbagai topping pilihan</textarea>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="bg-gray-50 p-4 rounded-xl hover:shadow-md transition">
+          <input type="text" value="Martabak Telor" class="w-full border p-2 rounded mb-2">
+          <input type="text" value="Rp 25.000" class="w-full border p-2 rounded mb-2">
+          <textarea class="w-full border p-2 rounded">Gurih, lezat, dan cocok untuk makan malam</textarea>
+        </div>
+
+      </div>
+
+      <!-- Tombol -->
+      <button type="submit"
+        class="w-full bg-gradient-to-r from-blue-500 to-green-500 text-white py-2 rounded-lg font-semibold hover:scale-105 hover:shadow-lg transition">
+        Simpan Data
+      </button>
+
+    </form>
+
+  </div>
+
+</body>
+</html>
